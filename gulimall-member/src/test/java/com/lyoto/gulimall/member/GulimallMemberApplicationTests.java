@@ -1,11 +1,11 @@
-package com.lyoto.gulimall.gulimallcoupon;
+package com.lyoto.gulimall.member;
 
 import org.junit.jupiter.api.Test;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GulimallCouponApplicationTests {
+class GulimallMemberApplicationTests {
 
 	@Test
 	void contextLoads() {

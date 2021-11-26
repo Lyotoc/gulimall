@@ -18,4 +18,4 @@ buildNumber.properties
 .idea
 
 **/.gitignore
-!/.gitignore
+**/HELP.md

@@ -1,4 +1,4 @@
-package com.lyoto.gulimall.gulimallorder;
+package com.lyoto.gulimall.order;
 
 import org.junit.jupiter.api.Test;
 

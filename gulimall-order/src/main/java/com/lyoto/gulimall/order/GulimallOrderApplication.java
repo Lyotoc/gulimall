@@ -1,4 +1,4 @@
-package com.lyoto.gulimall.gulimallorder;
+package com.lyoto.gulimall.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
