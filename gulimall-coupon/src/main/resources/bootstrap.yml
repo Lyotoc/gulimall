@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: gulimall-coupon
+  cloud:
+    #    nacos 相关配置
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: de55e7de-48d0-42c5-8ac1-717d3f5f28be
+
+        #   ${prefix} - ${spring.profiles.active} . ${file-extension} <--- 在 Nacos Config Starter 中，dataId 的拼接格式
+        #        prefix:
+        #      prefix 默认为 spring.application.name (在此配置文件中即为 ‘gulimall-coupon’)
+
+        #  profiles:
+        #    active:
+        #    即为当前环境对应的 profile
+
+        #      file-extension 用于声明配置内容文件的数据格式
+#        file-extension: yml
+
+#       额外拓展配置集 -- 将配置文件分功能进行管理，进行动态管理
+        ext-config:
+#          数据源
+          - data-id: datasource.yml
+            group: dev
+            refresh: true
+#          持久层框架
+          - data-id: mybatis.yml
+            group: dev
+            refresh: true
+#          其他
+          - data-id: other.yml
+            group: dev
+            refresh: true
+
+
+#        group:
+#  group 默认为 DEFAULT_GROUP
+
+
+
+
+
